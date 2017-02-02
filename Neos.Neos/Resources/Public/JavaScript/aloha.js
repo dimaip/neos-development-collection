@@ -208,26 +208,28 @@ function(
 					elements: [
 						'a', 'abbr', 'b', 'blockquote', 'br', 'caption', 'cite', 'code', 'col',
 						'colgroup', 'dd', 'del', 'dl', 'dt', 'em', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
-						'i', 'img', 'li', 'ol', 'p', 'pre', 'q', 'small', 'strike', 'strong',
+						'i', 'img', 'li', 'ol', 'p', 'pre', 'q', 'small', 'span', 'strike', 'strong',
 						'sub', 'sup', 'table', 'tbody', 'td', 'tfoot', 'th', 'thead', 'tr', 'u',
 						'ul', 'span', 'hr', 'object', 'div'
 					],
 					attributes: {
-						'a': ['href', 'title', 'id', 'class', 'target', 'data-gentics-aloha-repository', 'data-gentics-aloha-object-id'],
+						'a': ['href', 'title', 'id', 'class', 'target', 'data-gentics-aloha-repository', 'data-gentics-aloha-object-id', 'itemtype', 'itemprop', 'scope'],
 						'blockquote': ['cite'],
 						'q': ['cite'],
-						'div': ['id', 'class', 'style'],
+						'div': ['id', 'class', 'style', 'itemtype', 'itemprop', 'scope'],
 						'h1': ['style'],
 						'h2': ['style'],
 						'h3': ['style'],
 						'h4': ['style'],
 						'h5': ['style'],
 						'h6': ['style'],
-						'p': ['class', 'style', 'id'],
-						'td': ['abbr', 'axis', 'colSpan', 'rowSpan', 'colspan', 'rowspan', 'style'],
+						'p': ['class', 'style', 'id', 'itemtype', 'itemprop', 'scope'],
+						'tr': ['itemtype', 'itemprop', 'scope'],
+						'td': ['abbr', 'axis', 'colSpan', 'rowSpan', 'colspan', 'rowspan', 'style', 'itemtype', 'itemprop', 'scope'],
 						'th': ['abbr', 'axis', 'colSpan', 'rowSpan', 'colspan', 'rowspan', 'scope'],
 						'ul': ['class'],
-						'ol': ['class']
+						'ol': ['class'],
+						'span': ['itemtype', 'itemprop', 'scope']
 					},
 					protocols: {
 						'a': {'href': ['ftp', 'http', 'https', 'mailto', '__relative__', 'node', 'asset', 'tel', 'callto']},
